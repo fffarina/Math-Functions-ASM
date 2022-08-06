@@ -6,23 +6,23 @@ _factorial:
 
 	movl %edi, %eax
 	cmpl $0, %edi
-	je invalid
+	je _invalid
 	cmpl $1, %edi
-	je invalid
+	je _invalid
 
-loopr:
+_loopr:
 
 	dec %edi
 	imul %edi, %eax
 	cmpl $1, %edi
 	je end
-	jmp loopr
+	jmp _loopr
 
-end:
+_end:
 
 	ret
 
-invalid:
+_invalid:
 
 	movl $0, %eax
 	ret

@@ -15,3 +15,7 @@
  _div_shift performs a shift division between two unsigned int. To call if from C:
  
  extern unsigned int _div_shift(unsigned int a, unsigned int b);
+ 
+ _root computes the square root of n. To call it from C:
+ 
+ extern double _root(double a);

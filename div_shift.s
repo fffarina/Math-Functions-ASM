@@ -8,36 +8,36 @@ _div_shift:
 	movl $0, %eax			
 	movl $0, %r8d			
 	movl $31, %ecx		
-	jmp for_loop
+	jmp _for_loop
 
-for_if:
+_for_if:
 
 	movl %esi, %r8d			
 	sall %cl, %r8d	
 	cmpl %r8d, %edi			
-	jb end_for			
+	jb _end_for			
 	cmpl $0, %r8d		
-	je end_for		
+	je _end_for		
 	movl %edi, %r9d			
 	subl %r8d, %r9d			
 	cmpl %r9d, %edx			
-	jge int_for			
+	jge _int_for			
 	movl %r9d, %edx			
 
-int_for:
+_int_for:
 
 	subl %r8d, %edi			
 	movl $1, %r10d		
 	sall %cl, %r10d			
 	addl %r10d, %eax	
 
-end_for:
+_end_for:
 
 	dec %ecx		
 	
-for_loop:
+_for_loop:
 
 	cmpl $0, %ecx			
-	jge for_if		
+	jge _for_if		
 	ret				
 	

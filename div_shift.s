@@ -39,6 +39,5 @@ for_loop:
 
 	cmpl $0, %ecx			
 	jge for_if		
-	movl %edx, 4(%eax)	
 	ret				
 	

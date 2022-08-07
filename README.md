@@ -19,3 +19,7 @@
  _root computes the square root of n. To call it from C:
  
  extern double _root(double a);
+ 
+ _pow computes the n power of x. To call it from C:
+ 
+ extern int _pow(int x, int in);

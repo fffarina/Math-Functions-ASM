@@ -3,7 +3,7 @@
  
  _factorial computes the factorization of n
  
- To call it from C, you have first to assemble it into an object file (.0) and then link it to the source in C.
+ To call it from C, you have first to assemble it into an object file (.o) and then link it to the source in C.
  In order to call it as an external function from the C source, you have to declare it:
  
  extern int _factorial(int n);

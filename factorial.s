@@ -4,25 +4,25 @@
 
 _factorial:
 
-	movl %edi, %eax
-	cmpl $0, %edi
-	je _invalid
-	cmpl $1, %edi
-	je _invalid
+	movq %rdi, %rax
+	cmpq $0, %rdi
+	je invalid
+	cmpq $1, %rdi
+	je invalid
 
-_loopr:
+loopr:
 
-	dec %edi
-	imul %edi, %eax
-	cmpl $1, %edi
+	dec %rdi
+	imul %rdi, %rax
+	cmpq $1, %rdi
 	je end
-	jmp _loopr
+	jmp loopr
 
-_end:
+end:
 
 	ret
 
-_invalid:
+invalid:
 
-	movl $0, %eax
+	movq $0, %rax
 	ret

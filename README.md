@@ -23,3 +23,11 @@
  _pow computes the n power of x. To call it from C:
  
  extern int _pow(int x, int in);
+ 
+ _pow_float is like _pow but accepts float as base of the operand. From C:
+ 
+ extern double _pow_float(double x, int n);
+ 
+ _seeder provides a "true" random number from the high entropy chipset of the CPU to seed PRNGs. From C:
+ 
+ extern unsigned int _seeder(void); 

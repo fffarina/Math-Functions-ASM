@@ -31,3 +31,7 @@
  _seeder provides a "true" random number from the high entropy chipset of the CPU to seed PRNGs. From C:
  
  extern unsigned int _seeder(void); 
+ 
+ _rand_double generates a random double precision value between 0 and 1. To call it:
+ 
+ extern double _rand_double(void);

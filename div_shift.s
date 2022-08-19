@@ -1,6 +1,6 @@
-.global _div_shift
+	.global _div_shift
 
-.text
+	.text
 
 _div_shift:
 

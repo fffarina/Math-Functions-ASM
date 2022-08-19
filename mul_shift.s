@@ -1,6 +1,6 @@
-.global _mul_shift
+	.global _mul_shift
 
-.text
+	.text
 
 _mul_shift:
 

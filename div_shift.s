@@ -4,7 +4,7 @@
 
 _div_shift:
 
-	movl $0xeffffff, %edx		
+	movl $0xfffffff, %edx		
 	movl $0, %eax			
 	movl $0, %r8d			
 	movl $31, %ecx		

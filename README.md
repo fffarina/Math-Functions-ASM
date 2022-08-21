@@ -16,6 +16,10 @@
  
  extern unsigned int _div_shift(unsigned int a, unsigned int b);
  
+ _mod_shift is analogous to _div_shift but returns the modulus.
+ 
+ extern unsigned int _mod_shift(unsigned int a, unsigned int b);
+ 
  _root computes the square root of n. To call it from C:
  
  extern double _root(double a);

@@ -5,7 +5,7 @@
 _rand_double:
 
 	xor %rdx, %rdx
-	rdseed %edx
+	rdrand %edx
 	pxor %xmm0, %xmm0
 	cvtsi2sdq %rdx, %xmm0
 	movl $-1, %r8d
